@@ -30,7 +30,9 @@ h1, h2, h3, h4, h5,
     font-family: "Poppins", Arial, sans-serif;
     color: #000;
 }
-
+.h5, h5 {
+    font-size: 0.9rem !important;
+}
 .bg-primary {
     background: #fec771 !important;
 }
@@ -305,12 +307,38 @@ body {
     color:white;
 }
 
-.axie-div {
-    margin: 5px 0 5px 0;
+.axie-row {
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
-.axie-card{
-    height:150px;
+.axie-div {
+    margin: 5px 5px 5px 5px;
+    min-width:250px;
+    max-width:500px;
+}
+
+.axie-card {
+    width:99%;
+    height: 150px;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: space-between;
+    justify-content: space-between;
+    border:1px solid;
+    margin-bottom:1px;
+}
+
+.axie-card-item {
+    width: 100%;
+    /*font-size: 30px;*/
+    text-align: center;
+}
+
+.axie-part {
+    height: 150px;
+    /*padding-left: 0px !important;
+    padding-right:0px !important;*/
 }
 
 .axie-frontline{
@@ -324,3 +352,319 @@ body {
 .axie-backline {
     border-color: #108cae !important;
 }
+
+@media (min-width: 320px) {
+    .col-md-6 {
+        width: 50%;
+    }
+    /*.col-md-4 {
+        width: 33.3333%;
+    }*/
+    .axie-div {
+        width: 450px !important;
+    }
+
+    .axie-row {
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
+
+@media (min-width: 480px) {
+    .col-md-6 {
+        width:50%;
+    }
+    /*.col-md-4 {
+        width: 33.3333%;
+    }*/
+    .axie-div{
+        width:450px !important;
+    }
+
+    .axie-row {
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
+
+@media (min-width: 640px) {
+    .col-md-6 {
+        width: 50%;
+    }
+    /*.col-md-4 {
+        width: 33.3333%;
+    }*/
+    .axie-div {
+        width: 450px !important;
+    }
+
+    .axie-row {
+        margin-left: 5.5% !important;
+        margin-right: 5.5% !important;
+    }
+}
+
+@media (min-width: 770px) {
+    .col-md-6 {
+        width: 50%;
+    }
+    /*.col-md-4 {
+        width: 33.3333%;
+    }*/
+    .axie-div {
+        width: 300px !important;
+    }
+
+    .axie-row {
+        margin-left: 2.5% !important;
+        margin-right: 2.5% !important;
+    }
+}
+
+@media (min-width: 900px) {
+    .col-md-6 {
+        width: 50%;
+    }
+    /*.col-md-4 {
+        width: 33.3333%;
+    }*/
+    .axie-div {
+        width: 300px !important;
+    }
+    .axie-row {
+        margin-left: 2.5% !important;
+        margin-right: 2.5% !important;
+    }
+}
+
+@media (min-width: 960px) {
+    .col-md-6 {
+        width: 50%;
+    }
+    /*.col-md-4 {
+        width: 33.3333%;
+    }*/
+    .axie-div {
+        width: 300px !important;
+    }
+
+    .axie-row {
+        margin-left: 2.5% !important;
+        margin-right: 2.5% !important;
+    }
+}
+
+@media (min-width: 990px) {
+    .col-md-6 {
+        width: 50%;
+    }
+    /*.col-md-4 {
+        width: 33.3333%;
+    }*/
+    .axie-div {
+        width: 275px !important;
+    }
+
+    .axie-row {
+        margin-left: 2.5% !important;
+        margin-right: 2.5% !important;
+    }
+}
+
+@media (min-width: 1000px) {
+    .col-md-6 {
+        width: 50%;
+    }
+    /*.col-md-4 {
+        width: 33.3333%;
+    }*/
+    .axie-div {
+        width: 275px !important;
+    }
+
+    .axie-row {
+        margin-left: 2.5% !important;
+        margin-right: 2.5% !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    .col-md-6 {
+        width: 50%;
+    }
+    /*.col-md-4 {
+        width: 33.3333%;
+    }*/
+    .axie-div {
+        width: 325px !important;
+    }
+
+    .axie-row {
+        margin-left: 3.33% !important;
+        margin-right: 3.33% !important;
+    }
+}
+
+/* #### Mobile Phones Portrait #### */
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+    /* some CSS here */
+    .col-md-6 {
+        width: 50%;
+    }
+   /* .col-md-4 {
+        width: 33.3333%;
+    }*/
+    .axie-div {
+        width: 250px !important;
+    }
+}
+
+/* #### Mobile Phones Landscape #### */
+@media screen and (max-device-width: 640px) and (orientation: landscape) {
+    /* some CSS here */
+    .col-md-6 {
+        width: 50%;
+    }
+   /* .col-md-4 {
+        width: 33.3333%;
+    }*/
+    .axie-div {
+        width: 300px !important;
+    }
+}
+
+/* #### Mobile Phones Portrait or Landscape #### */
+@media screen and (max-device-width: 640px) {
+    /* some CSS here */
+    .col-md-6 {
+        width: 50%;
+    }
+    /*.col-md-4 {
+        width: 33.3333%;
+    }*/
+    .axie-div {
+        width: 450px !important;
+    }
+}
+
+/* #### iPhone 4+ Portrait or Landscape #### */
+@media screen and (min-device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
+    /* some CSS here */
+    .col-md-6 {
+        width: 50%;
+    }
+   /* .col-md-4 {
+        width: 33.3333%;
+    }*/
+    .axie-div {
+        width: 250px !important;
+    }
+    .axie-row {
+        margin-left: 1% !important;
+        margin-right: 1% !important;
+    }
+}
+@media screen and (min-device-width: 400px) and (-webkit-min-device-pixel-ratio: 2) {
+    /* some CSS here */
+    .col-md-6 {
+        width: 50%;
+    }
+    /* .col-md-4 {
+        width: 33.3333%;
+    }*/
+    .axie-div {
+        width: 350px !important;
+    }
+
+    .axie-row {
+        margin-left: 1% !important;
+        margin-right: 1% !important;
+    }
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-1 {
+    flex: 1 1 0%;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.w-half{
+    width:50%;
+}
+
+/*
+    used cards counter
+*/
+/*.qty {
+    margin-top: 1em;
+}*/
+.qty .count {
+    color: #000;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 20px;
+    padding: 0 2px;
+    min-width: 35px;
+    text-align: center;
+}
+
+.qty .plus {
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: top;
+    color: white;
+    width: 20px;
+    height: 20px;
+    font: 20px/1 Arial,sans-serif;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.qty .minus {
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: top;
+    color: white;
+    width: 20px;
+    height: 20px;
+    font: 20px/1 Arial,sans-serif;
+    text-align: center;
+    border-radius: 5px;
+    background-clip: padding-box;
+}
+
+.minus:hover {
+    background-color: #717fe0 !important;
+}
+
+.plus:hover {
+    background-color: #717fe0 !important;
+}
+/*Prevent text selection*/
+.counter {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+.used-card {
+    border: 0;
+    width: 2%;
+}
+
+.used-card::-webkit-outer-spin-button,
+.used-card::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+    .used-card:disabled {
+        background-color: white;
+    }
